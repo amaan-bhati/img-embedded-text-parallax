@@ -29,13 +29,15 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
-      <div className='h-[100vh]'/>
+    <div class="h-[100vh] flex items-center justify-center font-semi-bold">
+    This site contains a small section of modern design and animation trend where an image is embedded between some text and the text is in parallax. Scroll to explore the animation!
+  </div>
       <div ref={container}>
         <Slide src={Picture1} direction={'left'} left={"-40%"} progress={scrollYProgress}/>
         <Slide src={Picture2} direction={'right'} left={"-25%"} progress={scrollYProgress}/>
         <Slide src={Picture3} direction={'left'}  left={"-75%"} progress={scrollYProgress}/>
       </div>
-      <div className='h-[100vh]' />
+      <div class="h-[100vh] flex items-center justify-center font-bold">Contact @amaanbhati.tech for the source code and insights!</div>
     </main>
   );
 }
